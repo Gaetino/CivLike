@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini 4X - Style Civilization II</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui-root">
+    <header>
+      <h1>Mini 4X - Style Civilization II</h1>
+      <div id="game-info">
+        <span id="turn-indicator">Tour : 1</span>
+        <span id="player-indicator">Joueur : 1</span>
+      </div>
+    </header>
+
+    <main>
+      <section id="map-container">
+        <canvas id="game-canvas" width="960" height="640"></canvas>
+      </section>
+
+      <aside id="side-panel">
+        <section class="panel-block">
+          <h2>Infos case</h2>
+          <div id="tile-info">
+            Survolez une case...
+          </div>
+        </section>
+
+        <section class="panel-block">
+          <h2>Unité sélectionnée</h2>
+          <div id="unit-info">
+            Aucune unité.
+          </div>
+        </section>
+
+        <section class="panel-block">
+          <h2>Actions</h2>
+          <button id="end-turn-btn">Fin du tour</button>
+          <p class="hint">
+            Contrôles : clic pour sélectionner / déplacer, ZQSD ou flèches pour déplacer la caméra.
+          </p>
+        </section>
+
+        <section class="panel-block">
+          <h2>Debug</h2>
+          <pre id="debug-output"></pre>
+        </section>
+      </aside>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
